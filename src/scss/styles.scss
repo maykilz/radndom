@@ -1,0 +1,105 @@
+@import 'variable.scss';
+@import 'media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body { 
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 500;
+    background: #EEEEEE;
+} 
+
+header {
+    background: $blueBackground;
+}
+
+.header {
+    &-logoblock {
+        display: flex; 
+        color: #fff;
+        align-items: flex-end; 
+    }
+    &-logotittle {
+        font-size: 14px;
+        line-height: 118.4%;
+        margin-left: 19px;
+    }
+} 
+
+.nav-link {
+    color: #fff;
+    &:hover {
+        color: #0077B4;
+    }
+} 
+
+.navbar-toggler-icon {
+    background: url('../images/open-burger.svg') no-repeat center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+ font-weight: 800;
+}
+
+.intro {
+    color: #222222;
+    text-transform: uppercase; 
+    &-tittle { 
+        border-radius: 38px;   
+        border: 1.5px solid #222222;
+        font-weight: 600;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+button {
+    font-weight: 600;
+    color: #fff;
+    background: #004982;
+    border-radius: 6px;
+    border: none;   
+}
+
+.company {
+    &-info {
+        background: #0B1A27; 
+        color: #0B1A27;
+    }
+    &-infoblock {
+        display: flex; 
+        background: #EEEEEE;
+    }
+    &-infocount {
+        font-weight: 800;
+        display: flex;
+        flex-direction: column;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;    
+}
+
+.command {
+    &-item {
+        border: 1.2px solid #0B1A27;
+        border-radius: 8px; 
+    }
+    &item { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-weight: 500;
+    } 
+}
+
